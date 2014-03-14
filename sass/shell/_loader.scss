@@ -1,0 +1,131 @@
+.loaderWrapper {
+    position: absolute;
+    background-color: $themeColourDark;
+    width: $wrapperWidth;
+    height: $wrapperHeight;
+    z-index: 999;
+}
+.loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    margin-left: -50px;
+    margin-top: -50px;
+}
+.bubblingG {
+    text-align: center;
+    width: 160px;
+    height: 100px;
+}
+.bubblingG span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    margin: 50px auto;
+    background: #000000;
+    -moz-border-radius: 100px;
+    -moz-animation: bubblingG 0.5s infinite alternate;
+    -webkit-border-radius: 100px;
+    -webkit-animation: bubblingG 0.5s infinite alternate;
+    -ms-border-radius: 100px;
+    -ms-animation: bubblingG 0.5s infinite alternate;
+    -o-border-radius: 100px;
+    -o-animation: bubblingG 0.5s infinite alternate;
+    border-radius: 100px;
+    animation: bubblingG 0.5s infinite alternate;
+}
+#bubblingG_1 {
+    -moz-animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+    -ms-animation-delay: 0s;
+    -o-animation-delay: 0s;
+    animation-delay: 0s;
+}
+#bubblingG_2 {
+    -moz-animation-delay: 0.15s;
+    -webkit-animation-delay: 0.15s;
+    -ms-animation-delay: 0.15s;
+    -o-animation-delay: 0.15s;
+    animation-delay: 0.15s;
+}
+#bubblingG_3 {
+    -moz-animation-delay: 0.3s;
+    -webkit-animation-delay: 0.3s;
+    -ms-animation-delay: 0.3s;
+    -o-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+@-moz-keyframes bubblingG {
+    0% {
+        width: 20px;
+        height: 20px;
+        background-color: #000000;
+        -moz-transform: translateY(0);
+    }
+    100% {
+        width: 48px;
+        height: 48px;
+        background-color: #FFFFFF;
+        -moz-transform: translateY(-42px);
+    }
+}
+@-webkit-keyframes bubblingG {
+    0% {
+        width: 20px;
+        height: 20px;
+        background-color: #000000;
+        -webkit-transform: translateY(0);
+    }
+    100% {
+        width: 48px;
+        height: 48px;
+        background-color: #FFFFFF;
+        -webkit-transform: translateY(-42px);
+    }
+}
+@-ms-keyframes bubblingG {
+    0% {
+        width: 20px;
+        height: 20px;
+        background-color: #000000;
+        -ms-transform: translateY(0);
+    }
+    100% {
+        width: 48px;
+        height: 48px;
+        background-color: #FFFFFF;
+        -ms-transform: translateY(-42px);
+    }
+}
+@-o-keyframes bubblingG {
+    0% {
+        width: 20px;
+        height: 20px;
+        background-color: #000000;
+        -o-transform: translateY(0);
+    }
+    100% {
+        width: 48px;
+        height: 48px;
+        background-color: #FFFFFF;
+        -o-transform: translateY(-42px);
+    }
+}
+@keyframes bubblingG {
+    0% {
+        width: 20px;
+        height: 20px;
+        background-color: #000000;
+        transform: translateY(0);
+    }
+    100% {
+        width: 48px;
+        height: 48px;
+        background-color: #FFFFFF;
+        transform: translateY(-42px);
+    }
+}

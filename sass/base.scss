@@ -1,0 +1,9 @@
+//global variable
+$themeColourDark : rgba(232, 228, 231, 1);
+$wrapperHeight : 479px;
+$wrapperWidth:  490px;
+
+// Import partial file from shell directory
+@import 'shell/_moviepuzzle';
+@import 'shell/_loader';
+@import 'shell/_flipper';

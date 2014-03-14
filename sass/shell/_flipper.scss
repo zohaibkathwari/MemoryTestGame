@@ -1,0 +1,52 @@
+body {
+    background: #000;
+    color: #CCC
+}
+.flipWrapper {
+    -webkit-perspective: 300;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    margin: 15px 15px 15px 15px;
+}
+.flipWrapper .card.flipped {
+    -webkit-transform: rotatey(180deg);
+}
+.flipWrapper .card {
+    width: 100%;
+    height: 100%;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: 0.5s;
+}
+.flipWrapper .card .face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    z-index: 2;
+    font-family: Georgia;
+    font-size: 3em;
+    text-align: center;
+    line-height: 200px;
+}
+.flipWrapper .card .front {
+    position: absolute;
+    z-index: 1;
+    background-image: -ms-radial-gradient(center, circle farthest-side, #FFFFFF 0%, #00A3EF 100%);
+    background-image: -moz-radial-gradient(center, circle farthest-side, #FFFFFF 0%, #00A3EF 100%);
+    background-image: -o-radial-gradient(center, circle farthest-side, #FFFFFF 0%, #00A3EF 100%);
+    background-image: -webkit-gradient(radial, center center, 0, center center, 487, color-stop(0, #FFFFFF), color-stop(1, #00A3EF));
+    background-image: -webkit-radial-gradient(center, circle farthest-side, #FFFFFF 0%, #00A3EF 100%);
+    background-image: radial-gradient(circle farthest-side at center, #FFFFFF 0%, #00A3EF 100%);
+    color: white;
+    cursor: pointer;
+
+}
+.flipWrapper .card .back {
+    -webkit-transform: rotatey(-180deg);
+    background: blue;
+    background: red;
+    color: white;
+    cursor: pointer;
+
+}

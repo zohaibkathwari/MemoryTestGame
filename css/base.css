@@ -1,0 +1,270 @@
+/* line 3, ../sass/shell/_moviepuzzle.scss */
+.appWrapper {
+  width: 490px;
+  height: 479px;
+  margin: 50px auto;
+  border: 4px solid grey;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* line 11, ../sass/shell/_moviepuzzle.scss */
+.gameScore {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100px;
+  height: 43px;
+  color: #fff;
+}
+
+/* line 20, ../sass/shell/_moviepuzzle.scss */
+.tileItem {
+  border: 4px solid #0f0e0e;
+  height: 100px;
+  width: 100px;
+  margin: 29px 9px 0px 29px;
+  float: left;
+  background-color: #0f0e0e;
+  cursor: pointer;
+}
+/* line 28, ../sass/shell/_moviepuzzle.scss */
+.tileItem img {
+  width: 100%;
+  height: 100%;
+}
+/* line 32, ../sass/shell/_moviepuzzle.scss */
+.tileItem img:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+/* line 1, ../sass/shell/_loader.scss */
+.loaderWrapper {
+  position: absolute;
+  background-color: #e8e4e7;
+  width: 490px;
+  height: 479px;
+  z-index: 999;
+}
+
+/* line 8, ../sass/shell/_loader.scss */
+.loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  margin-left: -50px;
+  margin-top: -50px;
+}
+
+/* line 18, ../sass/shell/_loader.scss */
+.bubblingG {
+  text-align: center;
+  width: 160px;
+  height: 100px;
+}
+
+/* line 23, ../sass/shell/_loader.scss */
+.bubblingG span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  margin: 50px auto;
+  background: #000000;
+  -moz-border-radius: 100px;
+  -moz-animation: bubblingG 0.5s infinite alternate;
+  -webkit-border-radius: 100px;
+  -webkit-animation: bubblingG 0.5s infinite alternate;
+  -ms-border-radius: 100px;
+  -ms-animation: bubblingG 0.5s infinite alternate;
+  -o-border-radius: 100px;
+  -o-animation: bubblingG 0.5s infinite alternate;
+  border-radius: 100px;
+  animation: bubblingG 0.5s infinite alternate;
+}
+
+/* line 41, ../sass/shell/_loader.scss */
+#bubblingG_1 {
+  -moz-animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+/* line 48, ../sass/shell/_loader.scss */
+#bubblingG_2 {
+  -moz-animation-delay: 0.15s;
+  -webkit-animation-delay: 0.15s;
+  -ms-animation-delay: 0.15s;
+  -o-animation-delay: 0.15s;
+  animation-delay: 0.15s;
+}
+
+/* line 55, ../sass/shell/_loader.scss */
+#bubblingG_3 {
+  -moz-animation-delay: 0.3s;
+  -webkit-animation-delay: 0.3s;
+  -ms-animation-delay: 0.3s;
+  -o-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+@-moz-keyframes bubblingG {
+  /* line 63, ../sass/shell/_loader.scss */
+  0% {
+    width: 20px;
+    height: 20px;
+    background-color: #000000;
+    -moz-transform: translateY(0);
+  }
+
+  /* line 69, ../sass/shell/_loader.scss */
+  100% {
+    width: 48px;
+    height: 48px;
+    background-color: #FFFFFF;
+    -moz-transform: translateY(-42px);
+  }
+}
+
+@-webkit-keyframes bubblingG {
+  /* line 77, ../sass/shell/_loader.scss */
+  0% {
+    width: 20px;
+    height: 20px;
+    background-color: #000000;
+    -webkit-transform: translateY(0);
+  }
+
+  /* line 83, ../sass/shell/_loader.scss */
+  100% {
+    width: 48px;
+    height: 48px;
+    background-color: #FFFFFF;
+    -webkit-transform: translateY(-42px);
+  }
+}
+
+@-ms-keyframes bubblingG {
+  /* line 91, ../sass/shell/_loader.scss */
+  0% {
+    width: 20px;
+    height: 20px;
+    background-color: #000000;
+    -ms-transform: translateY(0);
+  }
+
+  /* line 97, ../sass/shell/_loader.scss */
+  100% {
+    width: 48px;
+    height: 48px;
+    background-color: #FFFFFF;
+    -ms-transform: translateY(-42px);
+  }
+}
+
+@-o-keyframes bubblingG {
+  /* line 105, ../sass/shell/_loader.scss */
+  0% {
+    width: 20px;
+    height: 20px;
+    background-color: #000000;
+    -o-transform: translateY(0);
+  }
+
+  /* line 111, ../sass/shell/_loader.scss */
+  100% {
+    width: 48px;
+    height: 48px;
+    background-color: #FFFFFF;
+    -o-transform: translateY(-42px);
+  }
+}
+
+@keyframes bubblingG {
+  /* line 119, ../sass/shell/_loader.scss */
+  0% {
+    width: 20px;
+    height: 20px;
+    background-color: #000000;
+    transform: translateY(0);
+  }
+
+  /* line 125, ../sass/shell/_loader.scss */
+  100% {
+    width: 48px;
+    height: 48px;
+    background-color: #FFFFFF;
+    transform: translateY(-42px);
+  }
+}
+
+/* line 1, ../sass/shell/_flipper.scss */
+body {
+  background: #000;
+  color: #cccccc;
+}
+
+/* line 5, ../sass/shell/_flipper.scss */
+.flipWrapper {
+  -webkit-perspective: 300;
+  width: 120px;
+  height: 120px;
+  position: relative;
+  margin: 15px 15px 15px 15px;
+}
+
+/* line 12, ../sass/shell/_flipper.scss */
+.flipWrapper .card.flipped {
+  -webkit-transform: rotatey(180deg);
+}
+
+/* line 15, ../sass/shell/_flipper.scss */
+.flipWrapper .card {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 0.5s;
+}
+
+/* line 21, ../sass/shell/_flipper.scss */
+.flipWrapper .card .face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  z-index: 2;
+  font-family: Georgia;
+  font-size: 3em;
+  text-align: center;
+  line-height: 200px;
+}
+
+/* line 32, ../sass/shell/_flipper.scss */
+.flipWrapper .card .front {
+  position: absolute;
+  z-index: 1;
+  background-image: -ms-radial-gradient(center, circle farthest-side, white 0%, #00a3ef 100%);
+  background-image: -moz-radial-gradient(center, circle farthest-side, white 0%, #00a3ef 100%);
+  background-image: -o-radial-gradient(center, circle farthest-side, white 0%, #00a3ef 100%);
+  background-image: -webkit-gradient(radial, center center, 0, center center, 487, color-stop(0, white), color-stop(1, #00a3ef));
+  background-image: -webkit-radial-gradient(center, circle farthest-side, white 0%, #00a3ef 100%);
+  background-image: radial-gradient(circle farthest-side at center, #ffffff 0%, #00a3ef 100%);
+  color: white;
+  cursor: pointer;
+}
+
+/* line 45, ../sass/shell/_flipper.scss */
+.flipWrapper .card .back {
+  -webkit-transform: rotatey(-180deg);
+  background: blue;
+  background: red;
+  color: white;
+  cursor: pointer;
+}
